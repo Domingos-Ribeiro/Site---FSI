@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="PT-PT"></html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Trabalho para FSI</title>
+    <link href="StyleSheets_FSI.css" rel="stylesheet" type="text/css">
+<!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+
+</head>
+<body>
+    
+
+<div class="main">
+
+<h1>Domingos Ribeiro</h1>
+<hr>
+
+<h2>NATUREZA EM MOVIMENTO</h2>
+<p>Página 1 Teste nº 161.</p>
+<!-- Portfolio Gallery Grid -->
+<div class="linhas">
+    <div class="colunas">
+        <div class="content">
+          <!-- On mouse over, as imagens rodam-->
+          <div class="flip-box">
+            <div class="flip-box-inner">
+              <div class="flip-box-front">
+                <img id="myImg"  src="imagens/floresta.jpg" alt="Imagem de Valiphotos de Pixabay" style="width: 100%" >
+                
+              </div>
+              <div class="flip-box-back">
+                
+                <h2>Direitos de autor</h2>
+                <p>Imagem de Valiphotos, Pixabay</p>
+                <button onclick="document.getElementById('myImg').style.display='block'" class="flip-box-back">Abrir Imagem</button>
+          
+              </div>
+            </div>
+        </div>
+        <h3>1ª Linha Foto 1 Coluna 1</h3>
+            <p>Coluna um - sit amet consectetur adipisicing elit. Quia magnam aut reiciendis incidunt enim repellendus expedita perferendis, dolorum facere, et veniam odit? Magni quae distinctio pariatur a molestias incidunt .</p> 
+        </div>
+        </div>   
+ 
+
+
+        <div class="colunas">
+            <div class="content">
+              <!-- On mouse over, as imagens rodam-->
+              <div class="flip-box">
+                <div class="flip-box-inner">
+                  <div class="flip-box-front">
+                    <img id="myImg2" src="imagens/rails.jpg" alt="Imagem de Valiphotos de Pixabay" style="width: 100%">
+                    
+                  </div>
+                  <div class="flip-box-back">
+                    <h2>Direitos de autor</h2>
+                    <p>Imagem de Larisa Koshkina, Pixabay</p>
+
+                    <button onclick="document.getElementById('myImg2').style.display='block'" class="flip-box-back">Abrir Imagem</button>
+
+                  </div>
+                </div>
+              </div>
+              <h3>1ª Linha Foto 2 Coluna 2</h3>
+            <p>Coluna dois - consectetur adipisicing elit. Quia magnam aut reiciendis incidunt enim repellendus expedita perferendis, dolorum facere, et veniam odit? Magni quae distinctio pariatur a molestias incidunt laudantium?.</p>
+            </div>
+        </div>
+        
+        <div class="colunas">
+            <div class="content">
+              <!-- On mouse over, as imagens rodam-->
+              <div class="flip-box">
+                <div class="flip-box-inner">
+                  <div class="flip-box-front">
+                    <img id="myImg3"src="imagens/lago.jpg" alt="Imagem de Valiphotos de Pixabay" style="width: 100%">
+                    
+                  </div>
+                  <div class="flip-box-back">
+                    <h2>Direitos de autor</h2>
+                    <p>Imagem de jplenio, Pixabay</p>
+                    <button onclick="document.getElementById('myImg3').style.display='block'" class="flip-box-back">Abrir Imagem</button>
+
+
+                  </div>
+                </div>
+              </div>
+              <h3>1ª Linha Foto 3 Coluna 3</h3>
+            <p>Coluna dois - consectetur adipisicing elit. Quia magnam aut reiciendis incidunt enim repellendus expedita perferendis, dolorum facere, et veniam odit? Magni quae distinctio pariatur a molestias incidunt laudantium?.</p>
+            </div>
+        </div>
+    
+        <div class="colunas">
+            <div class="content">
+              <!-- On mouse over, as imagens rodam-->
+              <div class="flip-box">
+                <div class="flip-box-inner">
+                  <div class="flip-box-front">
+                    <img id="myImg4" src="imagens/montanhas.jpg" alt="Imagem de Valiphotos de Pixabay" style="width: 100%">
+                    
+                  </div>
+                  <div class="flip-box-back">
+                    <h2>Direitos de autor</h2>
+                    <p>Imagem de David Mark, Pixabay</p>
+                    <button onclick="document.getElementById('myImg4').style.display='block'" class="flip-box-back">Abrir Imagem</button>
+
+
+                  </div>
+                </div>
+              </div>
+              <h3>1ª Linha Foto 4 Coluna 4</h3>
+            <p>Coluna dois - consectetur adipisicing elit. Quia magnam aut reiciendis incidunt enim repellendus expedita perferendis, dolorum facere, et veniam odit? Magni quae distinctio pariatur a molestias incidunt laudantium?.</p>
+            </div>
+        </div>
+
+
+  <!-- END GRID -->
+  </div>
+  
+  <div class="content">
+    <img src="imagens/ceu.jpg" alt="Bear" style="width:100%">
+    <h3>Imagem de destaque.</h3>
+    <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+    <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+  </div>
+  
+  <!-- END MAIN -->
+  </div>
+  
+
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="img01">
+    <div id="caption"></div>
+  </div>
+  
+  <script>
+  // Get the modal
+  var modal = document.getElementById("myModal");
+  
+  // Get the image and insert it inside the modal - use its "alt" text as a caption
+  var img = document.getElementById("myImg");
+  var modalImg = document.getElementById("img01");
+  var captionText = document.getElementById("caption");
+  img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+  }
+
+  var img = document.getElementById("myImg2");
+  var modalImg = document.getElementById("img01");
+  var captionText = document.getElementById("caption");
+  img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+  }
+
+  var img = document.getElementById("myImg3");
+  var modalImg = document.getElementById("img01");
+  var captionText = document.getElementById("caption");
+  img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+  }
+
+
+  var img = document.getElementById("myImg4");
+  var modalImg = document.getElementById("img01");
+  var captionText = document.getElementById("caption");
+  img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+  }
+  
+  // Get the <span> element that closes the modal
+  var span = document.getElementsByClassName("close")[0];
+  
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function() { 
+    modal.style.display = "none";
+  }
+  </script>
+
+
+
+
+
+
+
+
+
+
+  </body>
+  </html>
+  
+<!-- 1ª Galeria com 4 fotos 
+<div class="linhas">
+    <!-- 1ª Linha Foto 1 Coluna 1 
+  <div class="colunas">
+    <div class="content">
+      <!-- On mouse over, as imagens rodam
+      <div class="flip-box">
+        <div class="flip-box-inner">
+          <div class="flip-box-front">
+            <img src="imagens/floresta.jpg" alt="Imagem de Valiphotos de Pixabay" style="width: 100%">
+            
+          </div>
+          <div class="flip-box-back">
+            <h2>Direitos de autor</h2>
+            <p>Imagem de Valiphotos, Pixabay</p>
+            <!--<a href="https://www.sapo.pt/" target="_blank" class="btn btn-primary btn-lg" >ABRIR</a>-
+          </div>
+        </div>
+    </div>
+    <h3>1ª Linha Foto 1 Coluna 1</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia magnam aut reiciendis incidunt enim repellendus expedita perferendis, dolorum facere, et veniam odit? Magni quae distinctio pariatur a molestias incidunt laudantium?.</p> -->
+ 
+ <!-- FIM da 1ª Linha Foto 1 Coluna 1 -->
+

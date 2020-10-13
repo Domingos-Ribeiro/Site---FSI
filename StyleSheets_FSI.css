@@ -1,0 +1,199 @@
+
+
+
+
+#myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  #myImg:hover {opacity: 0.7;}
+  
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  }
+  
+  /* Modal Content (image) */
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+  }
+  
+  /* Caption of Modal Image */
+  #caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+  }
+  
+  /* Add Animation */
+  .modal-content, #caption {  
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+  @-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+  }
+  
+  @keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+  }
+  
+  /* The Close Button */
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* 100% Image Width on Smaller Screens */
+  @media only screen and (max-width: 700px){
+    .modal-content {
+      width: 100%;
+    }
+  }
+
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+  padding: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* Centrar todo o conteúdo do site */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+/* Caso o ecra seja reduzido, separa letra por letra */
+h1 {
+  font-size: 45px;
+  word-break: break-all;
+}
+
+.linhas {
+  margin: 8px -16px;
+}
+
+/* Adicionar um espaço de 3 pixels entre as colunas */
+.linhas,
+.linhas > .colunas {
+  padding: 3px;
+}
+
+/* Criar 4 colunas iguais 100/4 */
+.colunas {
+  float: left;
+  width: 25%;
+}
+
+/*Limpa os espaços entre as colunas  */
+.linhas:after {
+  content: "";
+  display: table;
+  clear: both;
+} 
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* Quando chega aos 700 pixels, passa de 4 colunas para duas. */
+@media screen and (max-width: 700px) {
+  .colunas {
+    width: 50%;
+  }
+}
+
+/* Quando chega aos 550 pixels, passa de 2 colunas para uma. */
+@media screen and (max-width: 550px) {
+  .colunas {
+    width: 99%;
+  }
+}
+
+/*On mouse over, a imagens giram 180 graus.*/
+
+.flip-box {
+    background-color: transparent;
+    width: 230px;
+    height: 154px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px;
+  }
+  
+  .flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-box-front, .flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-box-front {
+    background-color: rgb(34, 31, 235);
+    color: black;
+  }
+  
+  .flip-box-back {
+    background-color: #555;
+    color: white;
+    transform: rotateY(180deg);
+  }
